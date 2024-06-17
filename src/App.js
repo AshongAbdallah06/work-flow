@@ -5,15 +5,15 @@ import { useState } from "react";
 function App() {
 	const [counter, setCounter] = useState(0);
 
-	const Add = () => {
+	const Addition = () => {
 		setCounter(counter + 1);
 	};
 
-	const Subtract = () => {
+	const Subtraction = () => {
 		setCounter(counter - 1);
 	};
 
-	const reset = () => {
+	const Reseting = () => {
 		setCounter(0);
 	};
 
@@ -21,9 +21,9 @@ function App() {
 		<div className="App">
 			<h1>{counter}</h1>
 
-			<button onClick={Add}>Add</button>
-			<button onClick={Subtract}>Subtract</button>
-			<button onClick={reset}>Reset</button>
+			<button onClick={Addition}>Addition</button>
+			<button onClick={Subtraction}>Subtraction</button>
+			<button onClick={Reseting}>Reseting</button>
 		</div>
 	);
 }
